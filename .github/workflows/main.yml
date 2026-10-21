@@ -6,7 +6,7 @@ on:
       target_url:
         description: 'Starting website URL'
         required: false
-        default: 'https://witty-snake-472744.puter.site'
+        default: 'https://kind-street-188208.puter.site'
 
   push:
     branches:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Playwright Script (with Xvfb virtual display for headed mode)
         env:
-          TARGET_URL: ${{ github.event.inputs.target_url || 'https://witty-snake-472744.puter.site' }}
+          TARGET_URL: ${{ github.event.inputs.target_url || 'https://kind-street-188208.puter.site' }}
         run: |
           xvfb-run --auto-servernum --server-args="-screen 0 1366x768x24" node run-finale.js "$TARGET_URL"
 
@@ -54,7 +54,7 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TARGET_URL: ${{ github.event.inputs.target_url || 'https://witty-snake-472744.puter.site' }}
+          TARGET_URL: ${{ github.event.inputs.target_url || 'https://kind-street-188208.puter.site' }}
         run: |
           WF_FILE=$(echo "$GITHUB_WORKFLOW_REF" | sed -E 's|.*/workflows/([^@]+)@.*|\1|')
           echo "Re-triggering $WF_FILE"
