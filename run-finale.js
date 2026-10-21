@@ -9,7 +9,7 @@
  *   npx playwright install chromium
  *
  * Run:
- *   node run-finale.js https://witty-snake-472744.puter.site
+ *   node run-finale.js https://kind-street-188208.puter.site
  */
 
 const { chromium } = require('playwright');
@@ -18,7 +18,7 @@ const { chromium } = require('playwright');
 const TARGET_URL =
   process.argv[2] ||
   process.env.TARGET_URL ||
-  'https://witty-snake-472744.puter.site';
+  'https://kind-street-188208.puter.site';
 
 const BROWSER_SCRIPT = () => {
   // ============================================================================
@@ -408,7 +408,7 @@ const BROWSER_SCRIPT = () => {
         'smart-mountain-937000.puter.site': '9578779',
         'avid-mountain-909877.puter.site': '9578787',
         'jolly-road-702644.puter.site': '9578798',
-        'colorful-tv-258268.puter.site': '9578806',
+        'colorful-tv-258268.puter.site ': '9578806',
       };
 
       // Get the appropriate Linkvertise ID for this domain
@@ -453,42 +453,27 @@ const BROWSER_SCRIPT = () => {
 
     setTimeout(() => {
       if (
-        document.querySelector(
-          'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-link-detail-page > lv-main-content-layout > div > div.content > div > lv-link-content > div > div:nth-child(2) > lv-fullsize-result-component > lv-lib-card > div > div > div > div.lv-card__footer > div.--button-container > div.button-desktop > a > lv-lib-button > button'
-        )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-link-detail-page > lv-main-content-layout > div > div.content > div > lv-link-content > div > div.content-wrapper > lv-fullsize-result-component > ui-card > div > div.lv-card__footer > div.button-container.ui-full-width > div.button-desktop.ui-full-width > a > button")
       ) {
-        document
-          .querySelector(
-            'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-link-detail-page > lv-main-content-layout > div > div.content > div > lv-link-content > div > div:nth-child(2) > lv-fullsize-result-component > lv-lib-card > div > div > div > div.lv-card__footer > div.--button-container > div.button-desktop > a > lv-lib-button > button'
-          )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-link-detail-page > lv-main-content-layout > div > div.content > div > lv-link-content > div > div.content-wrapper > lv-fullsize-result-component > ui-card > div > div.lv-card__footer > div.button-container.ui-full-width > div.button-desktop.ui-full-width > a > button")
           .click();
       }
     }, 20000);
 
     setTimeout(() => {
       if (
-        document.querySelector(
-          'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > lv-lib-card > div > div > div > div.membership-plan-selection__plans > lv-membership-plan-option:nth-child(5) > div > div'
-        )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > ui-card > div > div.membership-plan-selection__plans > lv-membership-plan-option:nth-child(5) > div > div")
       ) {
-        document
-          .querySelector(
-            'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > lv-lib-card > div > div > div > div.membership-plan-selection__plans > lv-membership-plan-option:nth-child(5) > div > div'
-          )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > ui-card > div > div.membership-plan-selection__plans > lv-membership-plan-option:nth-child(5) > div > div")
           .click();
       }
     }, 30000);
 
     setTimeout(() => {
       if (
-        document.querySelector(
-          'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > lv-lib-card > div > div > div > div.membership-plan-selection__button.membership-plan-selection__button--access.ng-star-inserted > lv-lib-button > button'
-        )
+            document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > ui-card > div > div.membership-plan-selection__button.membership-plan-selection__button--access > button")
       ) {
-        document
-          .querySelector(
-            'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > lv-lib-card > div > div > div > div.membership-plan-selection__button.membership-plan-selection__button--access.ng-star-inserted > lv-lib-button > button'
-          )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-wait > lv-membership-selection-card > ui-card > div > div.membership-plan-selection__button.membership-plan-selection__button--access > button")
           .click();
       }
     }, 40000);
@@ -499,14 +484,9 @@ const BROWSER_SCRIPT = () => {
 
     function skip() {
       if (
-        document.querySelector(
-          'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-ad-experiment > lv-task-ad-stepper-line > lv-ad-step-nonskip > lv-fullsize-result-component > lv-lib-card > div > div > div > div.lv-card__body > lv-lib-carousel > div > div.skip-button.ng-star-inserted > lv-lib-chip > div'
-        )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-ad-experiment > lv-task-ad-stepper-line > lv-ad-step-nonskip > lv-fullsize-result-component > ui-card > div > div.lv-card__body > lv-lib-carousel > div > div.skip-button > lv-lib-chip > div")
       )
-        document
-          .querySelector(
-            'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-ad-experiment > lv-task-ad-stepper-line > lv-ad-step-nonskip > lv-fullsize-result-component > lv-lib-card > div > div > div > div.lv-card__body > lv-lib-carousel > div > div.skip-button.ng-star-inserted > lv-lib-chip > div'
-          )
+        document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-access-page > lv-main-content-layout > div > div.content > div > lv-task-ad-experiment > lv-task-ad-stepper-line > lv-ad-step-nonskip > lv-fullsize-result-component > ui-card > div > div.lv-card__body > lv-lib-carousel > div > div.skip-button > lv-lib-chip > div")
           .click();
     }
     //learn
@@ -545,9 +525,7 @@ const BROWSER_SCRIPT = () => {
         };
 
         // Now find and click the actual button
-        const btn = document.querySelector(
-          'body > lv-root > div.layout.ng-star-inserted > div.main-container > div.content-wrapper > lv-success-page > lv-main-content-layout > div > div.content > div > lv-success-variant-a > div > lv-lib-card:nth-child(2) > div > div > div > div > lv-lib-button > button'
-        );
+        const btn = document.querySelector("body > lv-root > div > div.main-container > div.content-wrapper > lv-success-page > lv-main-content-layout > div > div.content > div > div.success-wrapper > ui-card:nth-child(2) > div > button")
 
         if (!btn) {
           console.log('Button not found — check the selector.');
